@@ -11,7 +11,7 @@ test.beforeEach(async ({ page }) => {
   await loginPage.openPage();
 });
 
-test.describe("Login test", { tag: ["@smoke"] }, async () => {
+test.describe("Login test", { tag: ["@smoke", "@all"] }, async () => {
   test(
     "Logging in with valid username and password",
     { tag: ["@valid"] },
